@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='work_email']" position="before">
                 <field name="birthday"/>
-                <button name="test_action" string="test Button"  type="object"/> 
+               
             </xpath>
         </field>
     </record>
