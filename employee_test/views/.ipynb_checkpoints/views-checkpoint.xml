@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_employee_tree" model="ir.ui.view">
-        <field name="name">hr.employee.form</field>
-        <field name="model">hr.employee</field>
-        <field name="inherit_id" ref="hr.view_employee_form"></field>
+    <record id="view_partners_form_crml" model="ir.ui.view">
+        <field name="name">view.res.partner.form.birthday</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field eval="1" name="priority"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='work_email']" position="before">
+            <xpath expr="//field[@name='mobile']" position="after">
                 <field name="birthday"/>
             </xpath>
         </field>
